@@ -1,0 +1,223 @@
+
+<rdf:RDF
+xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+xmlns:owl="http://www.w3.org/2002/07/owl#"
+xmlns:dc="http://purl.org/dc/elements/1.1/"
+xmlns:mechanicalengineering="http://example.com/MechanicalEngineering">
+
+<!-- OWL Header Example -->
+<owl:Ontology rdf:about="http://www.example.com/MechanicalEngineering">
+<dc:title> Mechanical Engineering Ontology</dc:title>
+<dc:description>Mechanical Engineering ontology </dc:description>
+</owl:Ontology>
+
+
+<!-- Define properties -->
+<owl:ObjectProperty rdf:about="http://www.example.com/MechanicalEngineering#hasSubDomain"/>
+
+<owl:ObjectProperty rdf:about="http://www.example.com/MechanicalEngineering#supports"/>
+
+<owl:ObjectProperty rdf:about="http://www.example.com/MechanicalEngineering#includes"/>
+
+<!-- Class Definition -->
+
+<!-- OWL Class Definition - Engineering Design -->
+<owl:Class rdf:about="http://www.example.com/MechanicalEngineering#EngineeringDesign">
+<rdfs:label>Engineering Design</rdfs:label>
+<rdfs:comment>Class Of Mechanical Engineering</rdfs:comment>
+</owl:Class>
+
+<!-- OWL Class Definition - Knowledge Discovery -->
+<owl:Class rdf:about="http://www.example.com/MechanicalEngineering#KnowledgeDiscovery">
+<rdfs:label>KnowledgeDiscovery</rdfs:label>
+<rdfs:comment>Class Of Mechanical Engineering</rdfs:comment>
+</owl:Class>
+
+<!-- OWL Class Definition - Quality Control -->
+<owl:Class rdf:about="http://www.example.com/MechanicalEngineering#QualityControl">
+<rdfs:label>Quality Control</rdfs:label>
+<rdfs:comment>Class Of Mechanical Engineering</rdfs:comment>
+</owl:Class>
+
+<!-- OWL Class Definition - Education And Training -->
+<owl:Class rdf:about="http://www.example.com/MechanicalEngineering#EducationAndTraining">
+<rdfs:label>Education And Training</rdfs:label>
+<rdfs:comment>Class Of Mechanical Engineering</rdfs:comment>
+</owl:Class>
+
+<!-- OWL Class Definition - Manufacturing Processes -->
+<owl:Class rdf:about="http://www.example.com/MechanicalEngineering#ManufacturingProcesses">
+<rdfs:label>Manufacturing Processes</rdfs:label>
+<rdfs:comment>Class Of Mechanical Engineering</rdfs:comment>
+</owl:Class>
+
+
+<!--Sub Classes Definition -->
+
+
+<!-- OWL Subclass Definition - Design Principles -->
+<owl:Class rdf:about="http://www.example.com/MechanicalEngineering/DesignPrinciples">
+<!-- Design Principles is a subclassification of Engineering Design -->
+<rdfs:subClassOf rdf:resource="http://www.example.com/MechanicalEngineering#EngineeringDesign"/>
+<rdfs:label>Design Principles</rdfs:label>
+<rdfs:comment>Sub Class Of Engineering Design</rdfs:comment>
+</owl:Class>
+
+<!-- OWL Subclass Definition - Simulation Of Mechanical Systems -->
+<owl:Class rdf:about="http://www.example.com/MechanicalEngineering/SimulationOfMechanicalSystems">
+<!-- Simulation Of Mechanical Systems is a subclassification of Engineering Design -->
+<rdfs:subClassOf rdf:resource="http://www.example.com/MechanicalEngineering#EngineeringDesign"/>
+<rdfs:label>Simulation Of Mechanical Systems</rdfs:label>
+<rdfs:comment>Sub Class Of Engineering Design</rdfs:comment>
+</owl:Class>
+
+<!-- OWL Subclass Definition - Data Integration Methods -->
+<owl:Class rdf:about="http://www.example.com/MechanicalEngineering/DataIntegrationMethods">
+<!-- Data Integration Methods is a subclassification of Knowledge Discovery -->
+<rdfs:subClassOf rdf:resource="http://www.example.com/MechanicalEngineering#KnowledgeDiscovery"/>
+<rdfs:label>Data Integration Methods</rdfs:label>
+<rdfs:comment>Sub Class Of Knowledge Discovery</rdfs:comment>
+</owl:Class>
+
+<!-- OWL Subclass Definition - Semantic Search Techniques -->
+<owl:Class rdf:about="http://www.example.com/MechanicalEngineering/SemanticSearchTechniques">
+<!-- Semantic Search Techniques is a subclassification of Knowledge Discovery -->
+<rdfs:subClassOf rdf:resource="http://www.example.com/MechanicalEngineering#KnowledgeDiscovery"/>
+<rdfs:label>Semantic Search Techniques</rdfs:label>
+<rdfs:comment>Sub Class Of Knowledge Discovery</rdfs:comment>
+</owl:Class>
+
+<!-- OWL Subclass Definition - Quality Parameters -->
+<owl:Class rdf:about="http://www.example.com/MechanicalEngineering/QualityParameters">
+<!-- Quality Parameters is a subclassification of Quality Control -->
+<rdfs:subClassOf rdf:resource="http://www.example.com/MechanicalEngineering#QualityControl"/>
+<rdfs:label>Quality Parameters</rdfs:label>
+<rdfs:comment>Sub Class Of Quality Control</rdfs:comment>
+</owl:Class>
+
+<!-- OWL Subclass Definition - Inspection Processes -->
+<owl:Class rdf:about="http://www.example.com/MechanicalEngineering/InspectionProcesses">
+<!-- Inspection Processes is a subclassification of Quality Control -->
+<rdfs:subClassOf rdf:resource="http://www.example.com/MechanicalEngineering#QualityControl"/>
+<rdfs:label>Inspection Processes</rdfs:label>
+<rdfs:comment>Sub Class Of Quality Control</rdfs:comment>
+</owl:Class>
+
+<!-- OWL Subclass Definition - Mechanical Engineering Concepts -->
+<owl:Class rdf:about="http://www.example.com/MechanicalEngineering/MechanicalEngineeringConcepts">
+<!-- Mechanical Engineering Concepts is a subclassification of Education And Training -->
+<rdfs:subClassOf rdf:resource="http://www.example.com/MechanicalEngineering#EducationAndTraining"/>
+<rdfs:label>Mechanical Engineering Concepts</rdfs:label>
+<rdfs:comment>Sub Class Of Education And Training</rdfs:comment>
+</owl:Class>
+
+<!-- OWL Subclass Definition - Best Practices In Mechanical Engineering -->
+<owl:Class rdf:about="http://www.example.com/MechanicalEngineering/BestPracticesInMechanicalEngineering">
+<!-- Best Practices In Mechanical Engineering is a subclassification of Education And Training -->
+<rdfs:subClassOf rdf:resource="http://www.example.com/MechanicalEngineering#EducationAndTraining"/>
+<rdfs:label>Best Practices In Mechanical Engineering</rdfs:label>
+<rdfs:comment>Sub Class Of Education And Training</rdfs:comment>
+</owl:Class>
+
+
+<!-- OWL Subclass Definition - Material Selection -->
+<owl:Class rdf:about="http://www.example.com/MechanicalEngineering/MaterialSelection">
+<!-- Material Selection is a subclassification of Manufacturing Processes -->
+<rdfs:subClassOf rdf:resource="http://www.example.com/MechanicalEngineering#ManufacturingProcesses"/>
+<rdfs:label>Material Selection</rdfs:label>
+<rdfs:comment>Sub Class Of Manufacturing Processes</rdfs:comment>
+</owl:Class>
+
+
+<!-- OWL Subclass Definition - Assembly Processes -->
+<owl:Class rdf:about="http://www.example.com/MechanicalEngineering/AssemblyProcesses">
+<!-- Assembly Processes is a subclassification of Manufacturing Processes -->
+<rdfs:subClassOf rdf:resource="http://www.example.com/MechanicalEngineering#ManufacturingProcesses"/>
+<rdfs:label>Assembly Processes</rdfs:label>
+<rdfs:comment>Sub Class Of Manufacturing Processes</rdfs:comment>
+</owl:Class>
+
+<!--Creating Instances -->
+
+<!-- Define the Design Principles class instance -->
+<rdf:Description rdf:about="http://www.example.com/MechanicalEngineering/DesignPrinciples">
+<!-- Design Principles is an individual (instance) of the Engineering Design class -->
+<rdf:type rdf:resource="http://www.example.com/MechanicalEngineering#EngineeringDesign"/>
+<rdfs:label>Design Principles</rdfs:label>
+<rdfs:comment>Sub Class Of Engineering Design</rdfs:comment>
+</rdf:Description>
+
+<!-- Define the Simulation Of Mechanical Systems class instance -->
+<rdf:Description rdf:about="http://www.example.com/MechanicalEngineering/SimulationOfMechanicalSystems">
+<!-- Simulation Of Mechanical Systems is an individual (instance) of the Engineering Design class -->
+<rdf:type rdf:resource="http://www.example.com/MechanicalEngineering#EngineeringDesign"/>
+<rdfs:label>Simulation Of Mechanical Systems</rdfs:label>
+<rdfs:comment>Sub Class Of Engineering Design</rdfs:comment>
+</rdf:Description>
+
+<!-- Define the Data Integration Method class instance -->
+<rdf:Description rdf:about="http://www.example.com/MechanicalEngineering/DataIntegrationMethod">
+<!-- Data Integration Method is an individual (instance) of the Knowledge Discovery class -->
+<rdf:type rdf:resource="http://www.example.com/MechanicalEngineering#KnowledgeDiscovery"/>
+<rdfs:label>Data Integration Methods</rdfs:label>
+<rdfs:comment>Sub Class Of Knowledge Discovery</rdfs:comment>
+</rdf:Description>
+
+<!-- Define the Semantic Search Techniques class instance -->
+<rdf:Description rdf:about="http://www.example.com/MechanicalEngineering/SemanticSearchTechniques">
+<!-- Semantic Search Techniques is an individual (instance) of the Knowledge Discovery class -->
+<rdf:type rdf:resource="http://www.example.com/MechanicalEngineering#KnowledgeDiscovery"/>
+<rdfs:label>Semantic Search Techniques</rdfs:label>
+<rdfs:comment>Sub Class Of Knowledge Discovery</rdfs:comment>
+</rdf:Description>
+
+<!-- Define the Quality Parameters class instance -->
+<rdf:Description rdf:about="http://www.example.com/MechanicalEngineering/QualityParameters">
+<!-- Quality Parameters is an individual (instance) of the Quality Control class -->
+<rdf:type rdf:resource="http://www.example.com/MechanicalEngineering#QualityControl"/>
+<rdfs:label>Quality Parameters</rdfs:label>
+<rdfs:comment>Sub Class Of Quality Control</rdfs:comment>
+</rdf:Description>
+
+<!-- Define the Inspection Processes class instance -->
+<rdf:Description rdf:about="http://www.example.com/MechanicalEngineering/InspectionProcesses">
+<!-- Inspection Processes is an individual (instance) of the Quality Control class -->
+<rdf:type rdf:resource="http://www.example.com/MechanicalEngineering#QualityControl"/>
+<rdfs:label>Inspection Processes</rdfs:label>
+<rdfs:comment>Sub Class Of Quality Control</rdfs:comment>
+</rdf:Description>
+
+<!-- Define the Mechanical Engineering Concepts class instance -->
+<rdf:Description rdf:about="http://www.example.com/MechanicalEngineering/MechanicalEngineeringConcepts">
+<!-- Mechanical Engineering Concepts is an individual (instance) of the Education And Training class -->
+<rdf:type rdf:resource="http://www.example.com/MechanicalEngineering#EducationAndTraining"/>
+<rdfs:label>Mechanical Engineering Concepts</rdfs:label>
+<rdfs:comment>Sub Class Of Education And Training</rdfs:comment>
+</rdf:Description>
+
+<!-- Define the BestPractices In Mechanical Engineering class instance -->
+<rdf:Description rdf:about="http://www.example.com/MechanicalEngineering/BestPracticesInMechanicalEngineering">
+<!-- Best Practices In Mechanical Engineering is an individual (instance) of the Education And Training class -->
+<rdf:type rdf:resource="http://www.example.com/MechanicalEngineering#EducationAndTraining"/>
+<rdfs:label>Best Practices In Mechanical Engineering</rdfs:label>
+<rdfs:comment>Sub Class Of Education And Training</rdfs:comment>
+</rdf:Description>
+
+<!-- Define the Material Selection class instance -->
+<rdf:Description rdf:about="http://www.example.com/MechanicalEngineering/MaterialSelection">
+<!-- Material Selection is an individual (instance) of the Manufacturing Processes class -->
+<rdf:type rdf:resource="http://www.example.com/MechanicalEngineering#ManufacturingProcesses"/>
+<rdfs:label>Material Selection</rdfs:label>
+<rdfs:comment>Sub Class Of Manufacturing Processes</rdfs:comment>
+</rdf:Description>
+
+<!-- Define the Assembly Processes class instance -->
+<rdf:Description rdf:about="http://www.example.com/MechanicalEngineering/AssemblyProcesses">
+<!-- Assembly Processes is an individual (instance) of the Manufacturing Processes class -->
+<rdf:type rdf:resource="http://www.example.com/MechanicalEngineering#ManufacturingProcesses"/>
+<rdfs:label>Assembly Processes</rdfs:label>
+<rdfs:comment>Sub Class Of Manufacturing Processes</rdfs:comment>
+</rdf:Description>
+
+</rdf:RDF>
